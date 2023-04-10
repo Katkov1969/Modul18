@@ -1,0 +1,11 @@
+money = float(input("Введите сумму вклада "))
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+p1 = money/100*per_cent.get('ТКБ')
+p2 = money/100*per_cent.get('СКБ')
+p3 = money/100*per_cent.get('ВТБ')
+p4 = money/100*per_cent.get('СБЕР')
+deposit = [p1, p2, p3, p4]
+MAX = max(deposit)
+print('deposit =', deposit)
+M_D = "Максимальная сумма, которую вы можете заработать - %d" %(MAX)
+print(M_D)
